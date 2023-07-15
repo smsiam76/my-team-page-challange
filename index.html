@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>my team responsive</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		/*body{
+			width: 1200px;
+			margin: 0 auto;
+		}*/
+		.team-img{
+			width: 300px;
+		}
+		.team-img img{
+			width: 100%;
+			border-radius: 30px;
+		}
+		.container{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			justify-content: center;
+		}
+		.header-text{
+			grid-column: span 2;
+			margin: 0 auto;
+		}
+		.header-text p{
+			width: 320px;
+		}
+		#team-img-margin{
+			margin-top: 70px;
+		}
+		.header-text{
+			margin-bottom: 100px;
+		}
+		@media screen and (max-width: 576px) {
+			.container{
+				grid-template-columns: 1fr 1fr;
+				gap: 30px;
+				padding: 10px;
+			}
+			.header{
+				grid-column: span 2;
+
+			}
+			.header-text{
+/*				grid-column: span 2;*/
+				margin: 0;
+			}
+			.team-img{
+				width: auto;
+			}
+			#responsive{
+				margin-top: 70px;
+			}
+			#not-responsive{
+				margin-top: -70px;
+			}
+			.header-text p{
+				width: auto;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>The Creative Crew</h1>
+		</div>
+		<div class="header-text">
+			<h3>Who we Are</h3>
+			<p>We are team of creatively diverse,driven. Innovative individuals working in various location from the world.</p>
+		</div>
+		<div class="team-img">
+			<img src="images/photo1.png" alt="">
+			<h3>Bill Mahoney</h3>
+		</div>
+		<div id="team-img-margin" class="team-img">
+			<img src="images/photo2.png" alt="">
+			<h3>Saba Caberera</h3>
+		</div>
+		<div class="team-img">
+			<img src="images/photo3.png" alt="">
+			<h3>Shai Lee</h3>
+		</div>
+		<div id="responsive" class="team-img">
+			<img src="images/photo4.png" alt="">
+			<h3>Skyla lu</h3>
+		</div>
+		<div id="team-img-margin not-responsive" class="team-img">
+			<img src="images/photo5.png" alt="">
+			<h3>Griff Richards</h3>
+		</div>
+		<div id="responsive" class="team-img">
+			<img src="images/photo6.png" alt="">
+			<h3>Stan John</h3>
+		</div>
+	</div>
+</body>
+</html>
